@@ -32,6 +32,7 @@ export const fetchCollectionStartAsync = () => {
       );
       dispatch(fetchCollectionSuccess(collectionsMap));
     } catch (error) {
+      console.log(error);
       dispatch(fetchCollectionFailure(error.message));
     }
   };
